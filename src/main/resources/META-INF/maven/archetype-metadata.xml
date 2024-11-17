@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="basic">
+  <requiredProperties>
+    <requiredProperty key="packaging">
+      <defaultValue>jar</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+  <fileSets>
+    <fileSet>
+      <directory>src/main/java</directory>
+    </fileSet>
+    <fileSet filtered="true">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.yml</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>src/test/java</directory>
+    </fileSet>
+    <fileSet>
+      <directory>.</directory>
+      <includes>
+        <include>pom.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <includes>
+        <include>.gitattributes</include>
+        <include>.gitignore</include>
+        <include>.env</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>
+
